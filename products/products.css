@@ -1,0 +1,11 @@
+.pro_product {
+    width: 100%;
+}
+
+.pro_product_title {
+    text-align: center;
+    font-size: 3rem;
+    color: #1BB1DC;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
