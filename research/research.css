@@ -1,0 +1,166 @@
+.research {
+    width: 80vw;
+    margin: 1.7rem auto;
+}
+
+.research_header {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #1BB1DC;
+    margin-bottom: 0.8rem;
+}
+
+.product__area {
+    z-index: 10;
+    position: relative;
+    display: flex;
+}
+
+.product__display {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0.5rem 0 0;
+}
+
+.product__image {
+    display: flex;
+    min-width: 50%;
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.product__img {
+    width: 100%;
+}
+
+.product__img-others {
+    padding: 0.7rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.img__holder {
+    width: 70px;
+    border: 0;
+    margin: 0 0.5rem;
+    padding: 0.3rem 1.2rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.img__selected {
+    border: 3px solid #ff5e5e;
+    opacity: 0.7;
+}
+
+.img__holder img {
+    width: 100%;
+}
+
+.product__text {
+    border-left: 2px solid #FFFFFF;
+    padding-left: 1rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product_text_prgph,
+.product__text ol li {
+    padding: 0.2rem 0;
+    margin: 0.2rem 0;
+}
+
+.sub__descriptive_box {
+    padding: 0.5rem 0;
+    margin: 1rem 0;
+}
+
+.sub_descriptive_header {
+    color: #1BB1DC;
+    line-height: 2rem;
+}
+
+.sub_descriptive_desc {
+    margin: 0.5rem 0;
+    /* line-height: 2rem; */
+}
+
+.sub_descriptive_pargh {
+    margin: 0.5rem 0;
+    line-height: 1.7rem;
+}
+
+table.GeneratedTable {
+    width: 100%;
+    background-color: #000000;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #ffcc00;
+    border-style: solid;
+    color: #000000;
+    margin-top: 1rem;
+}
+
+table.GeneratedTable td,
+table.GeneratedTable th {
+    border-width: 2px;
+    border-color: #ffcc00;
+    border-style: solid;
+    padding: 3px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.sub_descriptive_img_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub_descriptive_img {
+    width: 80%;
+}
+
+.sub_descriptive_img img {
+    width: 100%;
+    padding: 1rem;
+}
+
+
+@media only screen and (max-width: 740px) {
+    .product__area {
+        flex-direction: column;
+    }
+
+    .product__text {
+        border: none;
+        border-top: 2px solid #FFFFFF;
+        margin-top: 1rem;
+        padding: 0.5rem 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .img__holder {
+        width: 80px;
+    }
+
+    .sub_descriptive_img_box{
+        flex-direction: column;
+    }
+}

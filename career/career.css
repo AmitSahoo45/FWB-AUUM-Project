@@ -1,0 +1,222 @@
+b {
+    font-size: 1.5rem;
+}
+
+.career__header>h3 {
+    text-align: center;
+}
+
+.img_join_us {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join_us_inner {
+    margin: 1rem 0;
+    width: 50%;
+}
+
+.join_us_inner img {
+    max-width: 100%;
+}
+
+.explanatory__text {
+    width: 80%;
+    line-height: 1.5em;
+    margin: 0.5rem auto;
+    font-weight: 200;
+    text-align: center;
+}
+
+.jobs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.job_box {
+    display: flex;
+    margin: 1rem 0;
+    width: 80vw;
+    border: 1px solid #ffffff85;
+    padding: 1rem;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: all 0.35s;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    -o-transition: all 0.35s;
+}
+
+.job_box:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.568);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.568);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.568);
+}
+
+.job__details {
+    flex: 0.55;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.job__title {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem 0 0.3rem 0;
+    color: #1BB1DC;
+}
+
+.sub__text {
+    color: #BBBBBB;
+    margin: 0.5rem 0;
+}
+
+.job__type {
+    padding: 0.7rem;
+    margin-bottom: 0.4rem;
+    width: 135px;
+    background: #5a5a5a;
+}
+
+.posting_date {
+    color: #00FF00;
+}
+
+.job__apply {
+    border-left: 2px solid #FFFFFF;
+    flex: 0.45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.job_ref_img {
+    max-width: 60%;
+}
+
+.job_ref_img img {
+    max-width: 100%;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+    margin: 0.5rem 0;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #FFFFFF;
+    /* font-weight: 700; */
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #fff;
+}
+
+@media only screen and (max-width: 710px) {
+    .job_box{
+        flex-direction: column;
+    }
+
+    .job__apply{
+        border-left: 0;
+    }
+
+    .career__header>h3{
+        font-size: 1.4rem;
+    }
+
+    b{
+        font-size: 1rem;
+    }
+
+    .job_ref_img{
+        max-width: 50%;
+    }
+}

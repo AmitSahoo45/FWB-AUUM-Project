@@ -622,7 +622,7 @@ header h1 {
 }
 
 .btn2:active:before {
-    background: red;
+    background: var(--color-2);
     transition: background 0s;
 }
 
@@ -699,8 +699,101 @@ footer {
     color: var(--color-1);
 }
 
-.copyright{
+.copyright {
     margin: 0.5rem 0;
 }
 
 /* End of Footer */
+
+/*  */
+/* Extras  */
+.about___us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  */
+
+/* Responsive  */
+
+
+@media only screen and (max-width: 710px) {
+    .content__area {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about___us {
+        flex-direction: column-reverse;
+    }
+
+    .btn {
+        margin: 2rem auto;
+    }
+
+    /* For Products Page and Section */
+    .product_container {
+        flex-direction: column;
+    }
+
+    .text_area-h3 {
+        text-align: center;
+    }
+
+    .product_img_cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product_desc {
+        text-align: center;
+    }
+
+    .mission {
+        margin: 3rem auto;
+        flex-direction: column;
+    }
+
+    .mission__header {
+        border: none;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        margin-bottom: 1rem;
+    }
+
+    .mission_description {
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .text__area-about-us {
+        width: 80vw;
+    }
+
+    .text_area_social_box {
+        margin: 1rem auto;
+    }
+
+    .social_media-box {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 475px) {
+    .header__navbar {
+        width: 70%;
+        left: -70%;
+    }
+
+    .show {
+        left: 0%;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+}
