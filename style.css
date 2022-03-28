@@ -787,6 +787,10 @@ footer {
         width: 70%;
         left: -70%;
     }
+    
+    #mobile-header{
+        padding-left: 1rem;
+    }
 
     .show {
         left: 0%;
